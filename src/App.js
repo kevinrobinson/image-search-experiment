@@ -33,7 +33,7 @@ export default class App extends Component {
 
   throttledFetch() {
     const {query} = this.state;
-    const endpoint = 'http://localhost:5000/images/search';
+    const endpoint = process.env.REACT_APP_ENDPOINT || 'http://localhost:5000/images/search';
     const url = `${endpoint}?q=${query}`;
 
     const headers = {'X-Services-Edu-Api-Key': 'abc'};
