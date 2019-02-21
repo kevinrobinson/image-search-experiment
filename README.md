@@ -1,7 +1,13 @@
-# youtube-classifier-experiment
+# images-search-experiment
 
-A React project for experimenting with YouTube.  Uses https://github.com/kevinrobinson/services-edu to search YouTube.
+A React project for experimenting with image search.  Uses https://github.com/kevinrobinson/services-edu to search a "custom search engine" for images.
 
+### Demo
+https://image-search-experiment.herokuapp.com/
+
+![dogs](docs/images2.png)
+
+![cats](docs/images1.png)
 
 ## Getting started
 ### `npm start`

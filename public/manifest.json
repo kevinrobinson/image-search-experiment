@@ -1,6 +1,6 @@
 {
-  "short_name": "youtube-classifier-experiment",
-  "name": "youtube-classifier-experiment",
+  "short_name": "images-search-experiment",
+  "name": "images-search-experiment",
   "icons": [
   ],
   "start_url": ".",
