@@ -16,7 +16,7 @@ export default class App extends Component {
     this.onQueryChange = this.onQueryChange.bind(this);
     this.onFetchDone = this.onFetchDone.bind(this);
     this.onFetchError = this.onFetchError.bind(this);
-    this.throttledFetch = _.throttle(this.throttledFetch, 100);
+    this.debouncedFetch = _.debounce(this.debouncedFetch, 100);
   }
 
   componentDidMount() {
@@ -27,11 +27,11 @@ export default class App extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     if (this.state.apiKey && prevState.query !== this.state.query) {
-      this.throttledFetch();
+      this.debouncedFetch();
     }
   }
 
-  throttledFetch() {
+  debouncedFetch() {
     const {query} = this.state;
     const endpoint = process.env.REACT_APP_ENDPOINT || 'http://localhost:5000/images/search';
     const url = `${endpoint}?q=${query}`;
