@@ -72,7 +72,7 @@ export default class App extends Component {
     return (
       <div>
         <div>You need an API key to get started.</div>
-        <div>When you get one, add it to the URL like `localhost:3000/use?api_key=abc`</div>
+        <div>When you get one, add it to the URL like `/use?api_key=abc`</div>
       </div>
     );
   }
