@@ -1,6 +1,6 @@
 # youtube-classifier-experiment
 
-A React project for experimenting with YouTube.  Uses services-edu to search YouTube.
+A React project for experimenting with YouTube.  Uses https://github.com/kevinrobinson/services-edu to search YouTube.
 
 
 ## Getting started
