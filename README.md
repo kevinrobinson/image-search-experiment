@@ -1,3 +1,5 @@
+(deprecated, see https://github.com/kevinrobinson/services-edu-experiments)
+
 # images-search-experiment
 
 A React project for experimenting with image search.  Uses https://github.com/kevinrobinson/services-edu to search a "custom search engine" for images.
